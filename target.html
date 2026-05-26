@@ -18,33 +18,18 @@
             }
 
             main {
-                width: min(86vmin, 720px);
+                width: min(92vmin, 820px);
                 text-align: center;
             }
 
             .marker {
-                box-sizing: border-box;
                 width: 100%;
-                aspect-ratio: 1;
-                padding: 14%;
                 background: #000;
             }
 
-            .inner {
-                box-sizing: border-box;
-                width: 100%;
-                height: 100%;
-                display: grid;
-                place-items: center;
-                padding: 8%;
-                background: #fff;
-            }
-
             img {
+                display: block;
                 width: 100%;
-                height: 100%;
-                object-fit: contain;
-                image-rendering: pixelated;
             }
 
             p {
@@ -59,7 +44,7 @@
                 }
 
                 main {
-                    width: 7in;
+                    width: 7.5in;
                 }
 
                 p {
@@ -71,11 +56,9 @@
     <body>
         <main>
             <div class="marker">
-                <div class="inner">
-                    <img src="assets/qr-code-trigger.png" alt="QR code AR target">
-                </div>
+                <img src="assets/ar-target.png" alt="Globe AR target">
             </div>
-            <p>Scan this QR to open the AR page, then point the camera back at this square target.</p>
+            <p>This is the AR target. Open the AR webpage on your phone, then point the camera at this image.</p>
         </main>
     </body>
 </html>
