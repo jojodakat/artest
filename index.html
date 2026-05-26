@@ -2,7 +2,7 @@
 <html>
     <head>
         <script src="vendor/aframe-1.0.4.min.js"></script>
-        <script src="vendor/aframe-ar-3.4.7.js"></script>
+        <script src="vendor/aframe-ar-master.js"></script>
         <script src="vendor/gesture-detector.js"></script>
         <script src="vendor/gesture-handler.js"></script>
         <style>
@@ -150,11 +150,18 @@
                 <a-video
                     src="#vid"
                     scale="1 1 1"
-                    position="0 0.1 0"
+                    position="0 0.12 0"
                     rotation="-90 0 0"
                     class="clickable"
                     gesture-handler
                 ></a-video>
+                <a-plane
+                    color="#00ff66"
+                    opacity="0.35"
+                    scale="1.08 1.08 1"
+                    position="0 0.08 0"
+                    rotation="-90 0 0"
+                ></a-plane>
             </a-marker>
 
             <a-entity camera></a-entity>
